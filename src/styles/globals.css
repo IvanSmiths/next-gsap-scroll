@@ -14,6 +14,7 @@ body,
   --primaryTextColor: #e6e6e6;
 
   --headlineBig: clamp(3rem, 9.9vw, 9rem);
+  --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
   --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
 }
@@ -66,8 +67,8 @@ body {
 
 .scroll-section h3 {
   color: var(--primaryTextColor);
-  letter-spacing: var(--headlineSmall);
-  font-size: var(--headlineSmall);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
   text-transform: uppercase;
 }
 
