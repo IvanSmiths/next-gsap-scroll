@@ -33,10 +33,10 @@ function ScrollSection() {
       pin.kill();
     };
   }, []);
- 
+
   return (
-    <section>
-      <div ref={triggerRef} className="scroll-section-outer">
+    <section className="scroll-section-outer">
+      <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
             <h3>Section 1</h3>
