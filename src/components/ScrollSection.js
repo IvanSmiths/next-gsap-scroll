@@ -1,13 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Link from "next/link";
+
 
 function ScrollSection() {
   gsap.registerPlugin(ScrollTrigger);
 
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
+
 
   useEffect(() => {
     const pin = gsap.fromTo(
@@ -16,7 +17,7 @@ function ScrollSection() {
         translateX: 0,
       },
       {
-        translateX: "-200vw",
+        translateX: "-300vw",
         ease: "none",
         duration: 0.5,
         scrollTrigger: {
@@ -32,6 +33,7 @@ function ScrollSection() {
       pin.kill();
     };
   }, []);
+ 
   return (
     <section>
       <div ref={triggerRef} className="scroll-section-outer">
@@ -39,11 +41,14 @@ function ScrollSection() {
           <div className="scroll-section">
             <h3>Section 1</h3>
           </div>
-          <div className="scroll-section scroll-section-2">
+          <div className="scroll-section">
             <h3>Section 2</h3>
           </div>
-          <div className="scroll-section scroll-section-3">
+          <div className="scroll-section">
             <h3>Section 3</h3>
+          </div>
+          <div className="scroll-section">
+            <h3>Section 4</h3>
           </div>
         </div>
       </div>

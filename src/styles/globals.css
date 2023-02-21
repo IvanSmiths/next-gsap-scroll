@@ -51,13 +51,13 @@ body {
 
 .scroll-section-inner {
   height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
 .scroll-section {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -70,14 +70,6 @@ body {
   letter-spacing: var(--headlineMedium);
   font-size: var(--headlineMedium);
   text-transform: uppercase;
-}
-
-.scroll-section-2 {
-  left: 100vw;
-}
-
-.scroll-section-3 {
-  left: 200vw;
 }
 
 .footer {
