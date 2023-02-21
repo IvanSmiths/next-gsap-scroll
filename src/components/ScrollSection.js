@@ -4,11 +4,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 function ScrollSection() {
-  gsap.registerPlugin(ScrollTrigger);
-
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const pin = gsap.fromTo(

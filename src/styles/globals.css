@@ -13,7 +13,7 @@ body,
   --primaryColor: #0aa1ff;
   --primaryTextColor: #e6e6e6;
 
-  --headlineBig: clamp(3rem, 9.9vw, 9rem);
+  --headlineBig: clamp(5rem, 9.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
   --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .hero__header h1 {
