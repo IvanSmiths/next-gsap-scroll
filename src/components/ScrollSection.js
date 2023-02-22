@@ -18,7 +18,7 @@ function ScrollSection() {
       {
         translateX: "-300vw",
         ease: "none",
-        duration: 0.5,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
