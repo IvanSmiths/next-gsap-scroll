@@ -29,12 +29,18 @@ function ScrollSection() {
       }
     );
     return () => {
+      {/* A return function for killing the animation on component unmount */ }
       pin.kill();
     };
   }, []);
 
   return (
     <section className="scroll-section-outer">
+      {/* The section up act just as a wrapper. If the trigger (below) is the
+      first jsx element in the component, you get an error on route change */}
+
+      {/* The div below act just as a trigger. As te doc suggest, the trigger and 
+      the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
